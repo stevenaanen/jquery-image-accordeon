@@ -44,6 +44,8 @@ Make sure you've loaded jQuery and then *jquery.imageaccordeon.js* in your HTML 
 
 Changelog
 ---------
+### v1.0.1
+- readme fixes
 ### v1.0
 - first working version of plugin
 
