@@ -84,8 +84,8 @@ body {
 .accordeon li {
   display: block;
   float: left;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   -webkit-transition: opacity 0.2s;
@@ -94,12 +94,12 @@ body {
   transition: opacity 0.2s;
 }
 /* line 32, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.content-block {
+.accordeon li.details-block {
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   line-height: 1.6;
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777;
@@ -107,12 +107,12 @@ body {
   position: relative;
 }
 /* line 47, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.content-block > * {
+.accordeon li.details-block > * {
   display: block;
   float: left;
 }
 /* line 50, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.content-block section {
+.accordeon li.details-block section {
   width: 300px;
   padding-left: 10px;
   padding-right: 10px;
@@ -120,7 +120,7 @@ body {
   padding-top: 0;
 }
 /* line 57, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.content-block section p:last-of-type {
+.accordeon li.details-block section p:last-of-type {
   margin-bottom: 0;
 }
 /* line 61, ../sass/jquery.imageaccordeon.sass */
