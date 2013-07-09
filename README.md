@@ -8,6 +8,7 @@ Usage
 
 ### HTML
 The HTML consists of an unordered list of items. Each item has a summary, which is basically what you always see (the img for example), and a details section. The details are hidden by default, and copied to the details block on click. So the details block is what actually slides out on a click on one of the other list items. You can position is wherever you prefer, and any html already in it will be retained. Also for the list items you can basically put anything in it, as long as you keep the `summary` and `details` nodes as the only direct children.
+
 	<ul>
 		<li>
 			<summary>
