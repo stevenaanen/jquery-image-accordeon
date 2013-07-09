@@ -1,5 +1,5 @@
 /*
- * jQuery Image Accordeon v1.0
+ * jQuery Image Accordeon v1.0.1
  * http://www.appophetweb.nl
  * https://github.com/stevenaanen/jquery-image-accordeon
  * Copyright 2013, AppOpHetWeb
