@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Tag Filtering Demo</title>
+		<style>
+			body { background-color: #eee; }
+			a { text-decoration: none; }
+			ul.tags { list-style-type: none; }
+			ul.tags li {
+			  display: inline-block;
+			  margin-right: 4px;
+			  margin-bottom: 7px;
+			}
+			.facet {
+			  -webkit-border-radius: 5px;
+			  -moz-border-radius: 5px;
+			  -ms-border-radius: 5px;
+			  -o-border-radius: 5px;
+			  border-radius: 5px;
+			  background-color: white;
+			  border: 1px solid #b9b9b9;
+			  font-weight: bold;
+			  padding: 5px 9px;
+			  color: #9b9b9b;
+			  vertical-align: middle;
+			}
+			.facet:hover {
+			  background-color: #e7e7e7;
+			  color: #585858;
+			}
+			.active .facet {
+			  background-color: #57595b;
+			  color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hello</h1>
+		<p>This is a really simple demo of how to use this plugin.</p>
+
+		<ul class="accordeon">
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Curabitur blandit tempus porttitor.</h1>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+					</section>
+				</details>
+			</li>
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Vestibulum id ligula porta felis euismod semper.</h1>
+						<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</section>
+				</details>
+			</li>
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Nibh Ridiculus Malesuada Consectetur.</h1>
+						<p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.
+
+Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.</p>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+					</section>
+				</details>
+			</li>
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Curabitur blandit tempus porttitor.</h1>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+					</section>
+				</details>
+			</li>
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Curabitur blandit tempus porttitor.</h1>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+					</section>
+				</details>
+			</li>
+			<li>
+				<summary>
+					<img src="http://placehold.it/120x80" alt="120x80">
+				</summary>
+				<details>
+					<img src="assets/topperbox/img/content/200x300text.gif" alt="200x300text">
+					<section>
+						<h1>Curabitur blandit tempus porttitor.</h1>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+					</section>
+				</details>
+			</li>
+		</ul>
+
+
+		<a href="https://github.com/stevenaanen/jquery-image-accordeon">Fork/star on GitHub</a>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="../jquery.imageaccordeon.js"></script>
+		<script>
+			$("ul.accordeon").accordeonize();
+		</script>
+	</body>
+</html>
