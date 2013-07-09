@@ -1,0 +1,55 @@
+/* This file defines styles for aesthetic purposes only.
+ * Feel free to override or replace by your own styling.
+
+@import compass/css3/opacity
+@import compass/css3/transition
+
+$vspace: 1em
+$light-grey: #ddd
+$grey: #777
+
+body
+	background-color: $light-grey
+
+.accordeon
+	li
+		margin:
+			top: $vspace / 2
+			bottom: $vspace / 2
+
+		&.details-block
+			margin:
+				top: $vspace * 1.5
+				bottom: $vspace * 1.5
+			padding:
+				top: 2 * $vspace
+				bottom: 2 * $vspace
+			line-height: 1.6
+			border-top: 1px solid $grey
+			border-bottom: 1px solid $grey
+			text-shadow: 0
+			position: relative
+			// for close button
+			& > *
+				display: block
+				float: left
+			section
+				width: 300px
+				padding:
+					left: 10px
+					right: 10px
+					bottom: 0
+					top: 0
+				p:last-of-type
+					margin-bottom: 0
+		+opacity(0.7)
+		+single-transition(opacity, 0.2s)
+		&.active, &:hover, &.content-block
+			+opacity(1)
+
+	summary
+		width: 100% / 4
+		height: 80px
+		margin: 2px
+		.lt-ie10 &
+			margin-left: -3px

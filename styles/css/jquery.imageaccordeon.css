@@ -1,7 +1,5 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* This file defines styles needed for correct behavior of the image accordeon plugin.
+ * We suggest to define your own styles elsewhere, or override styles defined here. */
 /* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,78 +65,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 14, ../sass/jquery.imageaccordeon.sass */
-body {
-  background-color: #dddddd;
-}
-
-/* line 17, ../sass/jquery.imageaccordeon.sass */
+/* line 8, ../sass/jquery.imageaccordeon.sass */
 .accordeon {
   list-style: none;
   display: block;
-  overflow: hidden;
   padding: 0;
   line-height: 0;
 }
-/* line 25, ../sass/jquery.imageaccordeon.sass */
+/* line 16, ../sass/jquery.imageaccordeon.sass */
 .accordeon li {
   display: block;
   float: left;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
 }
-/* line 32, ../sass/jquery.imageaccordeon.sass */
+/* line 23, ../sass/jquery.imageaccordeon.sass */
 .accordeon li.details-block {
+  clear: both;
   width: 100%;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  line-height: 1.6;
-  border-top: 1px solid #777777;
-  border-bottom: 1px solid #777777;
-  text-shadow: 0;
   position: relative;
 }
-/* line 47, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.details-block > * {
-  display: block;
-  float: left;
-}
-/* line 50, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.details-block section {
-  width: 300px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-/* line 57, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.details-block section p:last-of-type {
-  margin-bottom: 0;
-}
-/* line 61, ../sass/jquery.imageaccordeon.sass */
-.accordeon li.active, .accordeon li:hover, .accordeon li.content-block {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-/* line 63, ../sass/jquery.imageaccordeon.sass */
-.accordeon summary {
-  width: 100%/4;
-  height: 80px;
-  margin: 2px;
-}
-/* line 67, ../sass/jquery.imageaccordeon.sass */
-.lt-ie10 .accordeon summary {
-  margin-left: -3px;
-}
-/* line 69, ../sass/jquery.imageaccordeon.sass */
+/* line 29, ../sass/jquery.imageaccordeon.sass */
 .accordeon details {
   display: none;
 }
