@@ -12,25 +12,16 @@
 	$.fn.accordeonize = function( options ) {
 		// Create some defaults, extending them with any options that were provided
 		var settings = $.extend({
-			data			: "no data",
 			detailsBlock	: ".details-block",
-			appendAfter		: 4,
-			closeButton		: true,
-			hideTime		: 300,
-			showTime		: 400
+			closeButton		: ".close-button",
+			hideTime		: 170,
+			showTime		: 280
 		}, options);
 
 		// constants
-		//var contentWrapper = "<li class=\"content-block\"></li>";
-		var defaultContent = "";
 		var $accordeon = this;
-
-		// init
-		// create content block
-//		var appendAfter = settings.appendAfter;
-//		if (this.children().size() < appendAfter) appendAfter = this.children().size();
-//		var $detailsBlock = this.children().eq(appendAfter - 1).after(contentWrapper).next().hide();
-		$detailsBlock = $(settings.detailsBlock);
+		var $detailsBlock = $(settings.detailsBlock);
+		var defaultContent = $detailsBlock.first().html();
 
 		// onclick
 		this.children().not($detailsBlock).click(function() {
@@ -48,9 +39,9 @@
 					.slideDown(settings.showTime);
 
 				// bind close button
-				$detailsBlock.find(".close-button").click(function() {
+				$detailsBlock.find(settings.closeButton).click(function() {
 					clearDataPanel(function() {
-						$accordeon.children().removeClass("active");
+						$selection.removeClass("active");
 					});
 				});
 			});
