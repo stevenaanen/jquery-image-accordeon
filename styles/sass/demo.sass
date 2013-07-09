@@ -4,7 +4,7 @@
 @import compass/css3/opacity
 @import compass/css3/transition
 
-$vspace: 1em
+$vspace: .5em
 $light-grey: #ddd
 $grey: #777
 
@@ -14,42 +14,44 @@ body
 .accordeon
 	li
 		margin:
-			top: $vspace / 2
-			bottom: $vspace / 2
+			top: $vspace
+			bottom: $vspace
+
+		padding:
+			left: 7px
+			right: 7px
 
 		&.details-block
+			width: 390px
 			margin:
-				top: $vspace * 1.5
-				bottom: $vspace * 1.5
+				top: $vspace
+				bottom: $vspace
 			padding:
-				top: 2 * $vspace
-				bottom: 2 * $vspace
+				top: $vspace * 2
+				bottom: $vspace * 2
 			line-height: 1.6
 			border-top: 1px solid $grey
 			border-bottom: 1px solid $grey
-			text-shadow: 0
-			position: relative
-			// for close button
-			& > *
-				display: block
-				float: left
+			//text-shadow: 0
+
+			img
+				display: inline-block
+				//float: left
+
 			section
-				width: 300px
+				display: inline-block
+				width: 272px
 				padding:
-					left: 10px
-					right: 10px
-					bottom: 0
-					top: 0
+					left: 7px
+					right: 7px
 				p:last-of-type
 					margin-bottom: 0
+
 		+opacity(0.7)
 		+single-transition(opacity, 0.2s)
 		&.active, &:hover, &.content-block
 			+opacity(1)
 
 	summary
-		width: 100% / 4
-		height: 80px
-		margin: 2px
 		.lt-ie10 &
 			margin-left: -3px

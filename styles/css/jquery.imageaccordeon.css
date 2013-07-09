@@ -65,27 +65,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/jquery.imageaccordeon.sass */
+/* line 9, ../sass/jquery.imageaccordeon.sass */
 .accordeon {
+  overflow: hidden;
+  *zoom: 1;
   list-style: none;
-  display: block;
   padding: 0;
   line-height: 0;
 }
-/* line 16, ../sass/jquery.imageaccordeon.sass */
+/* line 18, ../sass/jquery.imageaccordeon.sass */
 .accordeon li {
   display: block;
   float: left;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  height: auto;
 }
 /* line 23, ../sass/jquery.imageaccordeon.sass */
 .accordeon li.details-block {
   clear: both;
-  width: 100%;
+  display: none;
   position: relative;
 }
-/* line 29, ../sass/jquery.imageaccordeon.sass */
+/* line 30, ../sass/jquery.imageaccordeon.sass */
+.accordeon .details-block + li {
+  clear: both;
+}
+/* line 33, ../sass/jquery.imageaccordeon.sass */
 .accordeon details {
   display: none;
 }

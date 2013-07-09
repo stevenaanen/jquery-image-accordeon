@@ -9,6 +9,8 @@ body {
 .accordeon li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  padding-left: 7px;
+  padding-right: 7px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   -webkit-transition: opacity 0.2s;
@@ -16,47 +18,38 @@ body {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-/* line 20, ../sass/demo.sass */
+/* line 24, ../sass/demo.sass */
 .accordeon li.details-block {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  width: 390px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   line-height: 1.6;
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777;
-  text-shadow: 0;
-  position: relative;
 }
-/* line 33, ../sass/demo.sass */
-.accordeon li.details-block > * {
-  display: block;
-  float: left;
+/* line 37, ../sass/demo.sass */
+.accordeon li.details-block img {
+  display: inline-block;
 }
-/* line 36, ../sass/demo.sass */
+/* line 41, ../sass/demo.sass */
 .accordeon li.details-block section {
-  width: 300px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0;
-  padding-top: 0;
+  display: inline-block;
+  width: 272px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
-/* line 43, ../sass/demo.sass */
+/* line 47, ../sass/demo.sass */
 .accordeon li.details-block section p:last-of-type {
   margin-bottom: 0;
 }
-/* line 47, ../sass/demo.sass */
+/* line 52, ../sass/demo.sass */
 .accordeon li.active, .accordeon li:hover, .accordeon li.content-block {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 50, ../sass/demo.sass */
-.accordeon summary {
-  width: 100%/4;
-  height: 80px;
-  margin: 2px;
-}
-/* line 54, ../sass/demo.sass */
+/* line 56, ../sass/demo.sass */
 .lt-ie10 .accordeon summary {
   margin-left: -3px;
 }

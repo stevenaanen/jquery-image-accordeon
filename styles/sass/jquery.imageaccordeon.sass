@@ -2,12 +2,14 @@
  * We suggest to define your own styles elsewhere, or override styles defined here.
 
 @import compass/reset
+@import compass/utilities/general/clearfix
 
 $vspace: 1em
 
 .accordeon
+	+clearfix
 	list-style: none
-	display: block
+	//display: block
 	//overflow: hidden
 	padding: 0
 	// from block-grid
@@ -16,15 +18,17 @@ $vspace: 1em
 	li
 		display: block
 		float: left
-		margin:
-			top: $vspace / 2
-			bottom: $vspace / 2
+		height: auto
 
 		&.details-block
 			clear: both
-			width: 100%
+			display: none
+			// hide by default
 			position: relative
 			// for close button
+
+	.details-block + li
+		clear: both
 
 	details
 		display: none
