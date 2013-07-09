@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass/css3/opacity
+@import compass/css3/transition
+
+$vspace: 1em
+$light-grey: #ddd
+$grey: #777
+
+body
+	background-color: $light-grey
+
+.accordeon
+	list-style: none
+	display: block
+	overflow: hidden
+	padding: 0
+	// from block-grid
+	line-height: 0
+	// image for navigation
+	li
+		display: block
+		float: left
+		$vspace: 10px
+		margin:
+			top: $vspace / 2
+			bottom: $vspace / 2
+		&.content-block
+			//+clearfix
+			width: 100%
+			margin:
+				top: $vspace * 1.5
+				bottom: $vspace * 1.5
+			padding:
+				top: 2 * $vspace
+				bottom: 2 * $vspace
+			line-height: 1.6
+			border-top: 1px solid $grey
+			border-bottom: 1px solid $grey
+			text-shadow: 0
+			position: relative
+			// for close button
+			& > *
+				display: block
+				float: left
+			section
+				width: 300px
+				padding:
+					left: 10px
+					right: 10px
+					bottom: 0
+					top: 0
+				p:last-of-type
+					margin-bottom: 0
+		+opacity(0.7)
+		+single-transition(opacity, 0.2s)
+		&.active, &:hover, &.content-block
+			+opacity(1)
+	summary
+		width: 100% / 4
+		height: 80px
+		margin: 2px
+		.lt-ie10 &
+			margin-left: -3px
+	details
+		display: none
+		// hide by default, content used (copied) in js
